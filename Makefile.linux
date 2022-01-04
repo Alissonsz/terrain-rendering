@@ -1,0 +1,20 @@
+INC_DIR		=	-I/usr/include/SDL2
+LIB_DIR		=	-L/usr/lib/SDL2 -L/usr/lib/nvidia-375/ -L/usr/lib/x86_64-linux-gnu/
+LINK_LIBS 	=	-lGL -lGLU -lGLEW -lSDL2main -lSDL2 # -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+.c.o:   $*.h
+	@echo "Compilando codigo C => " $@
+	gcc -c -Wall -I$(INC_DIR) $*.c
+
+.cpp.o:	$*.h
+	@echo "Compilando codigo C++ => " $@
+	g++	-c -Wall $(INC_DIR) $*.cpp
+
+all:	main
+
+main: main.o Shader.o
+	@echo "Linkando " $@
+	g++ -o $@ $^ $(LIB_DIR) $(LINK_LIBS)
+
+clean:
+	@echo "Limpando o diretorio..."
+	rm *.o *.*~ *~ main

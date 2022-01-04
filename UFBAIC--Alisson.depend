@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1572917530 source:c:\users\iagop\documents\ufbaic--alisson\shader.cpp
+	"Shader.h"
+
+1572917530 c:\users\iagop\documents\ufbaic--alisson\shader.h
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	"glm/gtc/type_ptr.hpp"
+	<GL/glew.h>
+	<GL/gl.h>
+
+1572919001 source:c:\users\iagop\documents\ufbaic--alisson\main.cpp
+	<iostream>
+	<math.h>
+	<SDL2/SDL.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"stb_image.h"
+	"Shader.h"
+	"Camera.h"
+
+1572917530 c:\users\iagop\documents\ufbaic--alisson\stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1572917530 c:\users\iagop\documents\ufbaic--alisson\camera.h
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<vector>
+

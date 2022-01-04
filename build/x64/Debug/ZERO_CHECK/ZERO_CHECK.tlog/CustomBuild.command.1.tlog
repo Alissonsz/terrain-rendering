@@ -1,0 +1,10 @@
+^E:\PROGRAMAS\TCC\TERRAIN-RENDERING\BUILD\CMAKEFILES\1AF7E384989B53CBFAB70264D4BA3BF7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/programas/TCC/terrain-rendering -BE:/programas/TCC/terrain-rendering/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/programas/TCC/terrain-rendering/build/terrainrender.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
